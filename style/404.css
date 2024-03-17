@@ -1,0 +1,21 @@
+.main404{
+  background-color: var(--primary-color1);
+  height: 100vh;
+  color: var( --second-color1);
+  text-align: center;
+  font-family: var(--font-title);
+}
+
+.main404 h1{
+  font-size: 4rem;
+}
+
+.main404 p{
+  font-size: 1.5rem;
+}
+
+.main404 img{
+  margin: auto;
+  display:block;
+  padding-top:90px;
+}

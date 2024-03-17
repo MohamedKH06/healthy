@@ -1,0 +1,66 @@
+.inner img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 600px;
+    height: 667px;
+}
+
+
+
+
+.menu-section .pattern-layer .pattern-4{
+    position: absolute;
+    left: 115px;
+    top: 915px;
+    width: 202px;
+    height: 202px;
+    background-repeat: no-repeat;
+    -webkit-animation: zoom-fade 7s infinite linear;
+    animation: zoom-fade 7s infinite linear ;
+  }
+  
+  .menu-section .pattern-layer .pattern-5{
+    position: absolute;
+    top: 1050px;
+    right: 80px;
+    width: 169px;
+    height: 140px;
+    background-repeat: no-repeat;
+  }
+
+
+
+
+.menu-section .pattern-layer .pattern-7{
+    position: absolute;
+    left: 115px;
+    top: 1765px;
+    width: 202px;
+    height: 202px;
+    background-repeat: no-repeat;
+    -webkit-animation: zoom-fade 7s infinite linear;
+    animation: zoom-fade 7s infinite linear ;
+  }
+  
+  .menu-section .pattern-layer .pattern-8{
+    position: absolute;
+    top: 1900px;
+    right: 80px;
+    width: 169px;
+    height: 140px;
+    background-repeat: no-repeat;
+  }
+
+  /* img-sections */
+
+  .img-section-fixd{
+    background-image: url(../images/fixd.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    background-attachment: fixed;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    padding: 300px 0;
+  }

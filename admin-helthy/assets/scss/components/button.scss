@@ -1,0 +1,25 @@
+.btn-white {
+    background-color: #fff;
+    border-color: #e7eaf3;
+}
+.btn-primary {
+    background-color: $__primarycolor;
+    border: 1px solid $__primarycolor;
+}
+.btn-outline-primary {
+    color: $__primarycolor;
+    border-color: $__primarycolor;
+    &:hover {
+        background-color: $__primarycolor;
+        border-color: $__primarycolor;
+    }
+}
+.btn-check:focus+.btn-primary, 
+.btn-primary:focus {
+    box-shadow: $__none !important;
+}
+.btn{
+    &:focus{
+        box-shadow: $__none !important; 
+    }
+}

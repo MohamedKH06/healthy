@@ -1,0 +1,153 @@
+.modal-dialog{
+    .modal-md {
+        max-width: 600px;
+    }
+}
+.form-header {
+    text-align: $__center;
+    margin-bottom: 30px;
+    h4 {
+        color: $__graybackblue;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+}
+.bank-details {
+    .bank-inner-details {
+        label {
+            font-size: 16px;
+            font-weight: 600;
+            color: $__graybackblue;
+            margin-bottom: 10px;
+        }
+        .form-control {
+            height: 50px;
+        }
+    }
+}
+
+.status-toggle {
+	.checktoggle {
+		background-color: $__white;
+		border: 1px solid rgba(0, 0, 0, 0.25);
+		cursor: $__pointer;
+		display: $__block;
+		font-size: 0;
+		height: 24px;
+		margin-bottom: 0;
+		position: $__relative;
+		width: 48px;
+		top: 0px;
+        @include rounded(12px);
+        transform: translate(calc(-30% - 5px), -39%);
+		&:after {
+			height: 15px;
+			width: 15px;
+		}
+
+	}
+	.check {
+        display: $__block;
+        width: 0;
+        height: 0;
+        visibility: $__hidden;
+        opacity: 0;
+        @include margin-padding(0, 0);
+        pointer-events: $__none;
+        @include position($__absolute,null,null,null,null);
+		&:checked {
+			+ .checktoggle{
+                background-color: $__primarycolor;
+                border: 1px solid $__primarycolor;
+                left: 0;
+                transform: translate(calc(-30% - 5px), -50%);
+                &.checkbox-bg {
+                    &::after {
+                        background-color:$__white;
+                    }
+                }
+			}
+		}
+	}
+	.checktoggle{
+        &:after {
+            content: ' ';
+            display: $__block;
+            width: 8px;
+            height: 8px;
+            background-color:rgba(0, 0, 0, 0.25);
+            height: 15px;
+            width: 15px; 
+            @include transform(translate(5px, -50%));
+            @include position($__absolute,null,null,null,0);
+            @include rounded(50%); 
+            @include position($__absolute,50%,null,null,0);
+            @include transition(all 0.2s ease);
+        } 
+        .checkbox-bg {
+            &::after {
+                background: rgba(0, 0, 0, 0.25);
+            }
+        }
+	}
+}
+.close-btn {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 18px;
+    i {
+        font-size: 20px;
+        color: #F0142F;
+    }
+}
+.del-icon {
+    margin-bottom: 23px;
+    i {
+        font-size: 60px;
+        color: #F0142F;
+        margin-bottom: 23px;
+    }
+}
+.submit-section {
+    .btn {
+        padding: 7px 12px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #FFFFFF;
+        min-width: 150px;
+        margin-top: 5px;
+    }
+}
+.custom-modal {
+    .modal-body {
+        padding: 30px;
+    }
+}
+.bank-details {
+    .modal-header {
+        border: 0;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+        display: flex;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .modal-body {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .modal-footer {
+        justify-content: end;
+        padding: 30px;
+    }
+  
+}
+.modal-backdrop{
+    &.show {
+        opacity: 0.4;
+    }
+}
+
